@@ -4,7 +4,9 @@ using namespace std;
 const int N = 1e6 + 5;
 int n,Q;
 int a[N],S[N];
-
+//sort
+// A[x] -> A[y] =>> sort(A+x,A+y+1);
+//A[1] -> A[N] =>> sort(A+1,A+N+1)
 void prefix1(){
 	for(int i=1;i<=n;i++){
 		if(i==1) S[i] = a[i];
